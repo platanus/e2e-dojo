@@ -45,6 +45,8 @@ end
 gem "mysql2"
 
 group :development, :test do
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "debugger", require: "ruby-debug"
@@ -59,5 +61,6 @@ group :development, :test do
 end
 
 group :test do
+  gem 'cucumber-rails'
   gem "shoulda-matchers"
 end
